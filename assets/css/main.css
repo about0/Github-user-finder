@@ -1,0 +1,11 @@
+.person_avatar {
+    width: 400px;
+}
+.rounded-2 {
+    border-radius: 6px !important;
+}
+body {
+    background-color: #faeae2;
+    font-family: Helvetica;
+
+}
