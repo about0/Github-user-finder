@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.module.js"],"names":[],"mappings":";;AAAA,IAAI,QAAQ,GAAG,SAAX,QAAQ,CAAa,MAAM,EAAE;;AAEhC,OAAM,CAAC,OAAO,GAAG,gBAAgB,CAAC;CAClC,CAAC","file":"app.module-compiled.js","sourcesContent":["var MainCtrl = function ($scope) {\r\n\r\n\t$scope.message = 'Hello, Angular';\r\n};"]}

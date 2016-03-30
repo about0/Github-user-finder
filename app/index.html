@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body ng-controller="MainCtrl">
+<h1>{{ message }}</h1>
+<div class="container">
+    <form name="myForm" ng-submit="submit()">
+        <label>
+            <input type="text" name="input" ng-model="gitUser.text">
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </label>
+    </form>
+</div>
+<div class="container">
+    <div>
+        {{ error }}
+    </div>
+    <div>
+        Name: {{ user.name }}
+    </div>
+    <div>
+        Location: {{ user.location }}
+    </div>
+    <div>
+        <img class="person_avatar rounded-2" ng-src="{{ user.avatar_url }}" title="{{ user.name }}">
+    </div>
+</div>
+
+<script src="assets/libs/bower_components/angular/angular.js"></script>
+<script src="assets/libs/bower_components/angular-bootstrap-seanlee10/ui-bootstrap.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="app.module.js"></script>
+</body>
+</html>
